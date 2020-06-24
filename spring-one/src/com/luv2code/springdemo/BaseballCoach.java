@@ -2,10 +2,10 @@ package com.luv2code.springdemo;
 
 public class BaseballCoach implements Coach {
 	// define a private field for the dependency
-	private FortuneService fortuneService;
+	private HappyFortuneService fortuneService;
 	
 	// define a constructor for dependency injection
-	public BaseballCoach(FortuneService theFortuneService) {
+	public BaseballCoach(HappyFortuneService theFortuneService) {
 		fortuneService = theFortuneService;
 	}
 	
