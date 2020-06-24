@@ -4,21 +4,24 @@ public class CricketCoach implements Coach {
 	// define a private field for the dependency
 	private FortuneService fortuneService;
 	
-	// define a constructor for dependency injection
-	public CricketCoach(FortuneService theFortuneService) {
-		fortuneService = theFortuneService;
+	// create a no-arg constructor
+	public CricketCoach() {
+		System.out.println("CricketCoach: inside on-arg constructor");
 	}
 	
+	// out setter method
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("CricketCoach: inside setter method - setFortuneService");
+		this.fortuneService = fortuneService;
+	}
+
 	@Override
 	public String getDailyWorkout() {
-		// TODO Auto-generated method stub
-		return "Oh-de-de-dah de-de-de um-ben-bah";
+		return "Practice fast bowling for 15 mins";
 	}
 
 	@Override
 	public String getDailyFortune() {
-		// use fortuneService to get a fortune
-		
 		return fortuneService.getFortune();
 	}
 
