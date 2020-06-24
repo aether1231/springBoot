@@ -8,4 +8,10 @@ public class CricketCoach implements Coach {
 		return "Oh-de-de-dah de-de-de um-ben-bah";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
